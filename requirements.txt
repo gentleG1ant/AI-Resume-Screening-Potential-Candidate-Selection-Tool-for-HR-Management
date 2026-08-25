@@ -1,0 +1,15 @@
+scikit-learn
+pandas
+numpy
+scipy
+pdfplumber
+python-docx
+oracledb
+fastapi
+uvicorn
+pydantic
+streamlit
+joblib
+nltk
+pytest
+python-dotenv

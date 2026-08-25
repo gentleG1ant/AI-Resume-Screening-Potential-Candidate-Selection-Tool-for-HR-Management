@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ai-resume-gateway
+  
+  datasource:
+    url: jdbc:h2:mem:resumedb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# Configuration for the internal Python AI Service bridge
+ai-service:
+  url: http://localhost:8000/internal/ai
+
+# JWT Configuration Secrets
+jwt:
+  # 256-bit secret key for HMAC-SHA256 (Should be overridden in production env)
+  secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+  expiration: 86400000 # 24 hours in milliseconds

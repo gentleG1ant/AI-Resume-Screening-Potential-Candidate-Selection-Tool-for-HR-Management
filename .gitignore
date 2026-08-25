@@ -1,0 +1,17 @@
+node_modules/
+venv/
+.env
+.idea/
+.vscode/
+target/
+*.jar
+*.zip
+__pycache__/
+*.pyc
+.DS_Store
+maven/
+node/
+jdk-21/
+maven.zip
+node-portable.zip
+
