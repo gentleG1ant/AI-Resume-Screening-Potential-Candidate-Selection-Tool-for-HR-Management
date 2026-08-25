@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,
-    allowedHosts: ['.trycloudflare.com'],
+    allowedHosts: true,
     proxy: {
       // Proxy API requests to Java Gateway
       '/api': {
